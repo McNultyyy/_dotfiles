@@ -1,21 +1,19 @@
-﻿# Jay Harris's dotfiles for Windows
+# Will's dotfiles for Windows
 
 A collection of PowerShell files for Windows, including common application installation through `Chocolatey` and `npm`, and developer-minded Windows configuration defaults. 
-
-Are you a Mac user? Check out my [dotfiles](https://github.com/jayharris/dotfiles) repository.
 
 ## Installation
 
 ### Using Git and the bootstrap script
 
-You can clone the repository wherever you want. (I like to keep it in `~\Projects\dotfiles-windows`.) The bootstrapper script will copy the files to your PowerShell Profile folder.
+You can clone the repository wherever you want. (I like to keep it in `~\Projects\_dotfiles`.) The bootstrapper script will copy the files to your PowerShell Profile folder.
 
 From PowerShell:
 ```posh
-git clone https://github.com/jayharris/dotfiles-windows.git; cd dotfiles-windows; . .\bootstrap.ps1
+git clone https://github.com/mcnultyyy/_dotfiles.git; cd _dotfiles; . .\bootstrap.ps1
 ```
 
-To update your settings, `cd` into your local `dotfiles-windows` repository within PowerShell and then:
+To update your settings, `cd` into your local `_dotfiles` repository within PowerShell and then:
 
 ```posh
 . .\bootstrap.ps1
@@ -30,7 +28,7 @@ Note: You must have your execution policy set to unrestricted (or at least in by
 To install these dotfiles from PowerShell without Git:
 
 ```bash
-iex ((new-object net.webclient).DownloadString('https://raw.github.com/jayharris/dotfiles-windows/master/setup/install.ps1'))
+iex ((new-object net.webclient).DownloadString('https://raw.github.com/mcnultyyy/_dotfiles/master/setup/install.ps1'))
 ```
 
 To update later on, just run that command again.
@@ -103,19 +101,7 @@ name on the first line.
 Finally, be sure to reference your own repository in the git-free installation command.
 ```bash
 iex ((new-object net.webclient).DownloadString('https://raw.github.com/$account/$repo/$branch/setup/install.ps1'))
-```
 
-## Feedback
-
-Suggestions/improvements are
-[welcome and encouraged](https://github.com/jayharris/dotfiles-windows/issues)!
-
-## Author
-
-| [![twitter/jayharris](http://gravatar.com/avatar/1318668b99b2d5a3900f3f7758763a69?s=70)](http://twitter.com/jayharris "Follow @jayharris on Twitter") |
-|---|
-| [Jay Harris](http://twitter.com/jayharris/) |
 
 ## Thanks to…
-
-* @[Mathias Bynens](http://mathiasbynens.be/) for his [OS X dotfiles](http://mths.be/dotfiles), which this repository is modeled after.
+* @[Jay Harris](http://twitter.com/jayharris) for his [dotfiles](https://github.com/jayharris/dotfiles-windows), which this repository is modeled after.
